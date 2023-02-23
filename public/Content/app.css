@@ -1,1 +1,162 @@
 /* custom css goes here */
+
+/* Dark theme */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    background-color: #000;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  header img {
+    height: 3rem;
+    margin-right: 1rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav li {
+    margin-left: 1rem;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Main navigation */
+  nav {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Welcome section */
+  #welcome {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #aboutMeBtn,
+  #projectsBtn, 
+  #resumeBtn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 0.5rem;
+  }
+  
+  #aboutMeBtn:hover,
+  #projectsBtn:hover,
+  #resumeBtn:hover {
+    background-color: #2a2a2a;
+  }
+
+  #resumeBtn { 
+    display: block; 
+    margin: auto;
+  }
+  
+  /* Loader section */
+  #loader {
+    padding: 2rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  #profile img {
+    border-radius: 10%;
+    display: block; 
+    margin: auto;
+
+}
+
+.light-background {
+  background-color: #f5f5f5;
+}
+
+/*projects ejs*/
+
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: black;
+}
+
+/*services ejs*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}*/
+
+.column {
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.content {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  color: black;
+}
+
+.content:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

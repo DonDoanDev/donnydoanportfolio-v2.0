@@ -1,6 +1,6 @@
 <!-- Main Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">COMP229</a>
+    <a class="navbar-brand" href="/"><i class="fas fa-yin-yang"></i> DONNY DOAN PORTFOLIO</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,15 +21,15 @@
         <% } else  { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About </a>
+          <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About Me </a>
         </li>
 
-        <% if (title == "Products") { %>
+        <% if (title == "Projects") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/products"><i class="fab fa-elementor"></i> Products </a>
+          <a class="nav-link" href="/projects"><i class="fab fa-elementor"></i> Projects </a>
         </li>
 
         <% if (title == "Services") { %>
@@ -40,21 +40,14 @@
           <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
         </li>
 
-        <% if (title == "Books") { %>
+        <% if (title == "Contacts") { %>
           <li class="nav-item active">
           <% } else  { %>
           <li class="nav-item">
           <% } %>
-            <a class="nav-link" href="/book-list"><i class="fas fa-book-dead"></i> Books </a>
+            <a class="nav-link" href="/contact-list"><i class="fas fa-book-dead"></i> Contacts </a>
           </li>
 
-        <% if (title == "Contact") { %>
-        <li class="nav-item active">
-        <% } else  { %>
-        <li class="nav-item">
-        <% } %>
-          <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact </a>
-        </li>
 
         <% if(typeof displayName == 'string' && displayName) { %>
           <li class="navbar-text"><i class="fas fa-lg fa-user"></i>Welcome, <%= displayName %> </li>
